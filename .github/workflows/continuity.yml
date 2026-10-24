@@ -22,6 +22,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Verify source manifest
+        run: python tools/verify_manifest.py
       - name: Install validation toolchain
         run: rustup toolchain install 1.98.0 --profile minimal
       - name: Record toolchain
