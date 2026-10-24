@@ -84,6 +84,8 @@ See [Claim boundary](CLAIM_BOUNDARY.md), [Known limitations](KNOWN_LIMITATIONS.m
 
 ## Citation and lineage
 
-[CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json) identify this software. Cite the actual release or commit used and the POC008 software DOI once its deposit is published.
+[CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json) identify this software. Cite the actual release or commit used and the published POC008 software DOI.
+
+Independent critique is invited through the [public PREreview request](https://prereview.org/preprints/doi-10.5281-zenodo.23613785). A published request is not a completed independent review.
 
 Prior records: [ESS-MAI research origin](https://github.com/gjatalegacy-create/ESS-MAI), [POC003–006 archive](https://doi.org/10.5281/zenodo.22750188), [POC007 software](https://doi.org/10.5281/zenodo.23596907), and [POC007 preprint](https://doi.org/10.5281/zenodo.23597026). Their identifiers and results do not establish POC008 correctness.
