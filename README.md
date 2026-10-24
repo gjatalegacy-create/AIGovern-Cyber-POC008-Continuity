@@ -89,3 +89,9 @@ See [Claim boundary](CLAIM_BOUNDARY.md), [Known limitations](KNOWN_LIMITATIONS.m
 Independent critique is invited through the [public PREreview request](https://prereview.org/preprints/doi-10.5281-zenodo.23613785). A published request is not a completed independent review.
 
 Prior records: [ESS-MAI research origin](https://github.com/gjatalegacy-create/ESS-MAI), [POC003–006 archive](https://doi.org/10.5281/zenodo.22750188), [POC007 software](https://doi.org/10.5281/zenodo.23596907), and [POC007 preprint](https://doi.org/10.5281/zenodo.23597026). Their identifiers and results do not establish POC008 correctness.
+
+## Project, artifact and author links
+
+[GitHub — source](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity) · [Hugging Face — public mirror](https://huggingface.co/datasets/gjata-legacy/ess-mai-poc-008-continuity) · [LinkedIn — author](https://www.linkedin.com/in/bledar-gjata-1a527030b/) · [Zenodo — software archive](https://doi.org/10.5281/zenodo.23613613) · [OpenAIRE — software metadata](https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.23613613) · [ORCID — author](https://orcid.org/0009-0003-7854-266X)
+
+POC008 is a bounded public research capsule derived from [ESS-MAI](https://github.com/gjatalegacy-create/ESS-MAI), not the full private AIGovern-Cyber runtime. The software archive and its separate manuscript keep distinct identifiers and claim boundaries. LinkedIn and ORCID identify author-declared profiles for Bledar Gjata (Gjata Legacy). The OpenAIRE DOI lookup returned the matching software metadata on 24 October 2026; indexing and these cross-links do not establish peer review, certification or endorsement.
