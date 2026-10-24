@@ -1,0 +1,62 @@
+   Compiling aigovern-cyber-poc008-continuity v0.1.0 (<PACKAGE>)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.35s
+     Running unittests src\lib.rs (<TARGET>\debug\deps\poc008_continuity-fbdbe5a5af56f7c4.exe)
+
+running 20 tests
+test progressive_debatic::checkpoint::tests::decoder_rejects_duplicate_unordered_and_unbacked_collections ... ok
+test progressive_debatic::core::tests::contradiction_pair_recorded_on_negation ... ok
+test progressive_debatic::core::tests::dominant_concept_survives ... ok
+test progressive_debatic::core::tests::session_not_found_is_fail_closed ... ok
+test progressive_debatic::core::tests::returns_detected_on_concept_reuse ... ok
+test progressive_debatic::checkpoint::tests::canonical_map_order_and_tie_policy_are_independent_of_insertion_order ... ok
+test progressive_debatic::genius_detector::tests::helpers_are_deterministic ... ok
+test progressive_debatic::genius_detector::tests::no_genius_before_min_turns ... ok
+test progressive_debatic::types::tests::budget_max_matches_mode ... ok
+test progressive_debatic::core::tests::package_estimated_trl_capped_at_two ... ok
+test progressive_debatic::types::tests::pd_id_is_deterministic_and_12_hex ... ok
+test progressive_debatic::types::tests::response_challenge_classification ... ok
+test progressive_debatic::genius_detector::tests::genius_signals_use_fixed_mass ... ok
+test zero_noi::tests::no_payload_interpretation ... ok
+test zero_noi::tests::no_mutation_no_authority ... ok
+test progressive_debatic::checkpoint::tests::inconsistent_counts_scopes_and_derived_material_fail_export ... ok
+test progressive_debatic::checkpoint::tests::inactive_flags_resistance_and_real_genius_state_survive ... ok
+test progressive_debatic::checkpoint::tests::checkpoint_roundtrip_preserves_state_and_next_real_ingest ... ok
+test progressive_debatic::checkpoint::tests::invalid_inputs_never_mutate_target ... ok
+test progressive_debatic::checkpoint::tests::exact_u32_budget_width_and_exhaustion_are_not_reset ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+     Running unittests src\main.rs (<TARGET>\debug\deps\poc008_continuity-dc39f16a92c59ea6.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\continuity.rs (<TARGET>\debug\deps\continuity-ec53b16042a4f8bb.exe)
+
+running 15 tests
+test oversized_input_fails_before_any_append ... ok
+test corrupted_complete_frame_is_refused_without_repair ... ok
+test rehashed_invalid_transition_is_refused_without_repair ... ok
+test caller_changed_question_and_checkpoint_are_recomputed_before_commit ... ok
+test malformed_complete_header_is_not_mislabelled_as_incomplete_tail ... ok
+test incomplete_tail_recovers_exact_committed_prefix ... ok
+test changed_retry_and_stale_new_request_fail_without_writing ... ok
+test rehashed_wrong_parent_record_cannot_extend_the_chain ... ok
+test operating_system_lock_refuses_other_process_then_releases_after_kill ... ok
+test old_exact_retry_after_head_advanced_does_not_append_or_reset_head ... ok
+test valid_old_prefix_is_accepted_documenting_rollback_limit ... ok
+test two_contexts_do_not_overwrite_each_others_state ... ok
+test detectably_corrupt_partial_header_is_refused_without_truncation ... ok
+test five_dialogue_cycles_in_new_processes_equal_uninterrupted_engine ... ok
+test sixty_four_restarts_preserve_state_and_the_sixty_fifth_transition has been running for over 60 seconds
+test sixty_four_restarts_preserve_state_and_the_sixty_fifth_transition ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 135.34s
+
+   Doc-tests poc008_continuity
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

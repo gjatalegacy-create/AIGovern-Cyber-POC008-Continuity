@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the POC008 release or commit you used. This software DOI is reserved for the release and becomes available when its deposit is published."
+type: software
+title: "AIGovern-Cyber POC008: Evidence-Bound Continuity"
+version: "0.1.0"
+doi: "10.5281/zenodo.23613613"
+authors:
+  - family-names: "Gjata"
+    given-names: "Bledar"
+    affiliation: "Independent Researcher, Albania"
+    orcid: "https://orcid.org/0009-0003-7854-266X"
+license: Apache-2.0
+repository-code: "https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity"
+keywords:
+  - ESS-MAI
+  - AIGovern-Cyber
+  - Rust
+  - checkpoint continuity
+  - reproducibility
+  - write-ahead log
+abstract: "A bounded Rust continuity experiment using the actual source-derived ESS-MAI PD engine and selected operational contracts with a new POC storage adapter. Local validation comprises 35 passing tests: 20 retained source unit tests and 15 integration tests. Five-turn and 65-turn experiments compare exact checkpoint bytes between uninterrupted execution and fresh-process continuation. Tests exercise retries, scoped head checks, corruption, incomplete tails and file ownership. The adapter is not the original KnowledgeVault or WAL-compatible with it. Valid rollback is accepted, finite bounds and source-version pinning remain explicit, and no science query or native knowledge verdict is produced. AI-assisted engineering and documentation are disclosed."

@@ -1,0 +1,55 @@
+name: POC008 reproduction or counterexample
+description: Report execution evidence, a failed continuity assumption or a source-only finding.
+title: "[POC008 review] "
+body:
+  - type: markdown
+    attributes:
+      value: "Adverse findings are welcome. Use synthetic data and distinguish the public capsule from the private runtime."
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or release and artifact hash
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence_type
+    attributes:
+      label: Type of review
+      options:
+        - Executed the released Rust capsule
+        - Source inspection only
+        - Separate model or modified implementation
+        - Other bounded observation
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and exact commands
+      description: "OS, architecture, Rust version, dependency lock identity, filesystem where relevant, inputs, and local changes."
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Expected and actual behavior
+      description: "Include minimal reproduction steps, outputs, exit codes, and skipped checks. For file faults, identify exact bytes or offsets."
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or authority boundary tested
+      description: "Examples: exact continuation, retry-before-CAS, context isolation, replay, torn tail, accepted valid rollback, or no native knowledge verdict."
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Interpretation and remaining limits
+      description: "Separate observed execution, source reasoning and hypotheses. Same-engine recomputation is not independent authority validation."
+  - type: textarea
+    id: context
+    attributes:
+      label: Review context
+      description: "Disclose relevant relationships and AI assistance. Identity and affiliation are optional; no favorable conclusion is required."

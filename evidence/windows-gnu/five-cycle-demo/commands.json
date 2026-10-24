@@ -1,0 +1,62 @@
+{
+  "binary_sha256": "f5105ccaeab4d246f5b7133977a51dab8af796ab31526b0fffc1ad4375f018dd",
+  "binary_filename": "poc008-continuity.exe",
+  "commands": [
+    {
+      "argv_after_binary": [
+        "step",
+        "continuity.wal",
+        "flag-description",
+        "op-0",
+        "1000",
+        "turn-01.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv_after_binary": [
+        "step",
+        "continuity.wal",
+        "flag-description",
+        "op-1",
+        "1001",
+        "turn-02.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv_after_binary": [
+        "step",
+        "continuity.wal",
+        "flag-description",
+        "op-2",
+        "1002",
+        "turn-03.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv_after_binary": [
+        "step",
+        "continuity.wal",
+        "flag-description",
+        "op-3",
+        "1003",
+        "turn-04.txt"
+      ],
+      "exit_code": 0
+    },
+    {
+      "argv_after_binary": [
+        "step",
+        "continuity.wal",
+        "flag-description",
+        "op-4",
+        "1004",
+        "turn-05.txt"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "scope": "Operational persistence; exact-checkpoint equivalence is checked by Cargo integration tests."
+}

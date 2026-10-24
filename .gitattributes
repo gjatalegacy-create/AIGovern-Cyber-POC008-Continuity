@@ -1,0 +1,3 @@
+* text=auto eol=lf
+*.wal -text
+*.pdf -text

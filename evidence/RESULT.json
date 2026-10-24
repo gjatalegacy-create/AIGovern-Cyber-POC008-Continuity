@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "artifact": "AIGovern-Cyber POC008: Evidence-Bound Continuity",
+  "date": "2026-10-24",
+  "platform": "Windows x86_64-pc-windows-gnu",
+  "test_command": "cargo test --locked --offline",
+  "test_exit_code": 0,
+  "unit_pass": 20,
+  "integration_pass": 15,
+  "failed": 0,
+  "ignored": 0,
+  "doctests": 0,
+  "compiler_warning_lines": 0,
+  "integration_seconds": 135.34,
+  "build_command": "cargo build --release --locked --offline",
+  "build_exit_code": 0,
+  "release_build_seconds": 13.55,
+  "release_binary_sha256": "f5105ccaeab4d246f5b7133977a51dab8af796ab31526b0fffc1ad4375f018dd",
+  "exact_checkpoint_equality": {
+    "five_evolving_dialogue_turns": 5,
+    "separate_process_steps": 65,
+    "comparison": "direct byte equality at each observed prefix against the actual uninterrupted extracted engine"
+  },
+  "demo": "windows-gnu/five-cycle-demo/cycles.jsonl",
+  "adverse_case": {
+    "valid_old_complete_history": "ACCEPTED as expected: authenticated rollback prevention is NOT implemented"
+  },
+  "red_regression": {
+    "test": "detectably_corrupt_partial_header_is_refused_without_truncation",
+    "before_exit": 101,
+    "after": "PASS in final suite"
+  },
+  "history": "First integration run: 10 PASS, 3 test-harness failures from independent reads while Windows file lock held; harness drops Store before those reads. Production lock retained. Two more integration tests added, plus exact-byte assertions at every 65-step prefix.",
+  "scope": [
+    "operational PD checkpoint continuity only",
+    "no science evaluated",
+    "no native knowledge verdict or authority transfer",
+    "no KiE/PIM/Spine/T1/T2 integration"
+  ],
+  "source_checks": [
+    {
+      "source": "quantum/src/progressive_debatic/mod.rs",
+      "sha256": "6ccb2ca2e96330bf054bf44ae84edd78b17b9a4814d5fd91d6d1ec5a511d3efd",
+      "unchanged": true
+    },
+    {
+      "source": "quantum/src/progressive_debatic/core.rs",
+      "sha256": "7d33b7344381ebd31075968ab1ebca18c22be54e9332d09b2a34a4e6f5be7c37",
+      "unchanged": true
+    },
+    {
+      "source": "quantum/src/progressive_debatic/types.rs",
+      "sha256": "a0f219f8ccddf556e3766375ec02ff9d82a4e1bda423b9b70fe2553456f71cc2",
+      "unchanged": true
+    },
+    {
+      "source": "quantum/src/progressive_debatic/genius_detector.rs",
+      "sha256": "6d49345667f0b350e92a2e597ef0b4766c6437957974382a4331e46bf396b508",
+      "unchanged": true
+    },
+    {
+      "source": "quantum/src/progressive_debatic/checkpoint.rs",
+      "sha256": "5cbabc0af24c095f0c63b6219fe8eea6c2033fe0f0314644b625bb8690e3345c",
+      "unchanged": true
+    },
+    {
+      "source": "shadow-contracts/src/boundary/pd_spine.rs",
+      "sha256": "ac203b9474a25818de8ef4402a63c6eddf6419e249ec57725bd1f1e7b57e41e4",
+      "unchanged": true
+    },
+    {
+      "source": "zero-noi/src/lib.rs",
+      "sha256": "db6ba97d1c8c95d642f261a423336c4510212abe2f162ce1fe4db5f471619cd9",
+      "unchanged": true
+    },
+    {
+      "source": "shadow-contracts/src/pd_memory.rs",
+      "sha256": "fd5364567ee1e86600b634b510a80ccaca2532c6c36768b4ecc5415e2c68ebe5",
+      "unchanged": true
+    },
+    {
+      "source": "shadow/src/pd_memory_store.rs",
+      "sha256": "7cb4094ed78c525105f53c07b695fb81050f5c62627e917f6b0f8e9377e47682",
+      "unchanged": true
+    },
+    {
+      "source": "shadow-contracts/src/lib.rs",
+      "sha256": "2993284234716ac0a00b60e5225a4d683445bfd052b49343a75d8934980056f5",
+      "unchanged": true
+    },
+    {
+      "source": "shadow/src/vault_disk.rs",
+      "sha256": "e5a2d008dc6a14587c7af5683dce5d859bd14979946e69bfde61f2ed711aa301",
+      "unchanged": true
+    }
+  ],
+  "logs": [
+    {
+      "source_log": "test_final_exact.log",
+      "raw_sha256": "1242b665bb92cd59f85392220b9ea8a185f8185f1a60e7a7ec08ca240bc9441c",
+      "public_file": "windows-gnu/cargo-test.log",
+      "public_sha256": "208471a9535d3c5e291c3ece79f9cf5c3dc00a19502101be38e60abb82d2dfdc",
+      "transformation": "UTF-8, LF; replace local PACKAGE/TARGET/WORKSPACE absolute paths only"
+    },
+    {
+      "source_log": "build_release.log",
+      "raw_sha256": "042adf293fc5baa78101f7b8c92f98b58038b35c05001b39b894d1d9e56b5600",
+      "public_file": "windows-gnu/cargo-release.log",
+      "public_sha256": "76348ff5137a219585c37c8b44d8f01c5993dcfbada531c6228229d6ae043742",
+      "transformation": "UTF-8, LF; replace local PACKAGE/TARGET/WORKSPACE absolute paths only"
+    },
+    {
+      "source_log": "red_partial_header.log",
+      "raw_sha256": "c6dc5c159f92e0ea38dd91e67f93e398ef5c9bc79c4cada1ccba717b2aace82f",
+      "public_file": "windows-gnu/red-partial-header.log",
+      "public_sha256": "1455b17c18a154ecee17e12b0fa1d9a51fc9860cf5c9413efad0b6296c46ef0a",
+      "transformation": "UTF-8, LF; replace local PACKAGE/TARGET/WORKSPACE absolute paths only"
+    },
+    {
+      "source_log": "test_initial.log",
+      "raw_sha256": "0d831b7f903cdc62b16146b0959635b939b985b7b6c0f42be5f3800b8d6adcaa",
+      "public_file": "windows-gnu/first-integration-run.log",
+      "public_sha256": "70598d819e1424593c4528d676423cae586cf4132ff6bfbcb745b7053337c017",
+      "transformation": "UTF-8, LF; replace local PACKAGE/TARGET/WORKSPACE absolute paths only"
+    },
+    {
+      "source_log": "demo.log",
+      "raw_sha256": "dd154bf8385ed0a019d124b2b9153bc10caa292b19bd181ce18dd4eefafaac84",
+      "public_file": "windows-gnu/release-demo.log",
+      "public_sha256": "69dd410b6286b40a15af002981b1e5533266971ab399267d50225e9b6f421f69",
+      "transformation": "UTF-8, LF; replace local PACKAGE/TARGET/WORKSPACE absolute paths only"
+    }
+  ],
+  "release_source_sha256": {
+    "src/continuity.rs": "af7d2275e6c0cd40a53258e44c3daef9f130fef4df3459ebf0cafc962f480c92",
+    "src/fnv.rs": "14ecf4445c1d5fb57ecfb3650b6e3850178dad767003de4c748b6e280c20bd97",
+    "src/framing.rs": "0f0a7e2b312f6b2cc4027d0bcfbb7d9ddfbfc2affb402107473dbfa0a052c9f4",
+    "src/lib.rs": "bddcf5130e3e7e9f231592b949e6e85535d6113db2b7a90a467ae33432809697",
+    "src/main.rs": "f7935d4faa52c6b43d91b7ad57016d02d714172eb2b4ca4ed84c3b7d2d334d09",
+    "src/pd_memory.rs": "a1a333f9e0ca4ba42b10dac09b0ce3345ffcfa08f90cef235ed538e7a71dda54",
+    "src/pd_spine_contract.rs": "fe9119b4dbcdd192b581a096380ff4dec19670a2a6b1c6f1ce8504cfa355d95b",
+    "src/progressive_debatic/checkpoint.rs": "5cbabc0af24c095f0c63b6219fe8eea6c2033fe0f0314644b625bb8690e3345c",
+    "src/progressive_debatic/core.rs": "0f16410dd8f8be6ab63596de99fb049b8fced354b7afe5f685f127f5fba15c38",
+    "src/progressive_debatic/genius_detector.rs": "6d49345667f0b350e92a2e597ef0b4766c6437957974382a4331e46bf396b508",
+    "src/progressive_debatic/mod.rs": "0b15f427681650bd9d20c678f1bfe63c6f5c5fad17d8f77b57619a38fce9fdc6",
+    "src/progressive_debatic/types.rs": "8fd69bd037195e9cf1bfcbf28a03bbd5c1fa23316d7f5aecb880a5d743a3e8e1",
+    "src/projection.rs": "866361b03176cb603141d489886c1f9fe8456d92389e3bcc81424c317aa19647",
+    "src/zero_noi.rs": "cc3b00bc0db1a35981689c536ba00fd72ac9f3586c1cdce05dca5631bfee4f55"
+  },
+  "test_source_sha256": "98ae5da7bdd577745026b5bde933bf06110c5df0c18f64ade006aca837401a42",
+  "cargo_lock_sha256": "f85223480a582318ea29fe11761292457b81a7d39f25af98dffc2f2fdd5f052a"
+}

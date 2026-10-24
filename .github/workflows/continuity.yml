@@ -1,0 +1,32 @@
+name: POC008 continuity
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    name: Rust 1.98.0 on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      RUSTFLAGS: -Dwarnings
+      RUST_BACKTRACE: "1"
+      CARGO_TERM_COLOR: never
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install validation toolchain
+        run: rustup toolchain install 1.98.0 --profile minimal
+      - name: Record toolchain
+        run: rustc +1.98.0 --version --verbose
+      - name: Test locked dependency graph
+        run: cargo +1.98.0 test --locked
+      - name: Build release
+        run: cargo +1.98.0 build --release --locked

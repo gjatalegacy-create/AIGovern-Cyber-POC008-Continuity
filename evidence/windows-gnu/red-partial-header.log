@@ -1,0 +1,22 @@
+   Compiling aigovern-cyber-poc008-continuity v0.1.0 (<PACKAGE>)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.12s
+     Running tests\continuity.rs (<TARGET>\debug\deps\continuity-ec53b16042a4f8bb.exe)
+
+running 1 test
+test detectably_corrupt_partial_header_is_refused_without_truncation ... FAILED
+
+failures:
+
+---- detectably_corrupt_partial_header_is_refused_without_truncation stdout ----
+
+thread 'detectably_corrupt_partial_header_is_refused_without_truncation' (9344) panicked at tests\continuity.rs:186:49:
+detectable partial-header corruption must fail
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    detectably_corrupt_partial_header_is_refused_without_truncation
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 12 filtered out; finished in 0.07s
+
+error: test failed, to rerun pass `--test continuity`

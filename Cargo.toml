@@ -1,0 +1,23 @@
+[package]
+name = "aigovern-cyber-poc008-continuity"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.89"
+license = "Apache-2.0"
+description = "A source-derived ESS-MAI PD continuity experiment with durable scoped replay"
+repository = "https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity"
+
+[lib]
+name = "poc008_continuity"
+
+[[bin]]
+name = "poc008-continuity"
+path = "src/main.rs"
+
+[dependencies]
+sha2 = "=0.10.9"
+serde_json = "=1.0.150"
+
+[lints.rust]
+warnings = "deny"
+

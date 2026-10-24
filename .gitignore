@@ -1,0 +1,5 @@
+/target/
+/demo-run*/
+__pycache__/
+*.pyc
+.DS_Store

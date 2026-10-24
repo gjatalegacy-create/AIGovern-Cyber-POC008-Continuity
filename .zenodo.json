@@ -1,0 +1,52 @@
+{
+  "title": "AIGovern-Cyber POC008: Evidence-Bound Continuity",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "doi": "10.5281/zenodo.23613613",
+  "creators": [
+    {
+      "name": "Gjata, Bledar",
+      "orcid": "0009-0003-7854-266X",
+      "affiliation": "Independent Researcher, Albania"
+    }
+  ],
+  "description": "A bounded Rust continuity experiment combining the actual source-derived ESS-MAI PD core/detector/checkpoint/data types, restricted operational PDC1 contract, PdProjection and supporting primitives with a new Store/WAL adapter. Local validation comprises 35 passing tests: 20 retained source unit tests and 15 integration tests, with no failures or ignored tests. Five-turn and 65-turn experiments compare exact checkpoint bytes at every step between uninterrupted execution and fresh-process continuation. Tests cover retries, stale heads, scoped contexts, corrupted records and partial headers, incomplete tails, competing file owners and oversized input. A valid older WAL is accepted and remains an explicit rollback limitation. The adapter is not the original KnowledgeVault or WAL-compatible with it. The auxiliary PDC1 field is not evaluated. Maximum format bounds are 4096 turns and an 8 MiB checkpoint; no full-horizon or indefinite-continuity proof is claimed. Records pin exact adapter-source bytes and migration is absent. Every open replays the full WAL; inspect can initialize or repair files. No authenticated rollback prevention, universal power-loss guarantee, hostile-host proof, science-query evaluation, native knowledge verdict, certification or AI Act compliance is claimed. OpenAI Codex assisted engineering and documentation; Bledar Gjata directs the architecture and reports shell-based review. The Windows GNU run used Rust/Cargo 1.98.0; exact commands and artifact identity are recorded in evidence/RESULT.json. External CI and independent review are separate activities.",
+  "license": "apache2.0",
+  "access_right": "open",
+  "keywords": [
+    "ESS-MAI",
+    "AIGovern-Cyber",
+    "POC008",
+    "Rust",
+    "checkpoint continuity",
+    "reproducibility",
+    "write-ahead log"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gjatalegacy-create/ESS-MAI",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.22750188",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23596907",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23597026",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
