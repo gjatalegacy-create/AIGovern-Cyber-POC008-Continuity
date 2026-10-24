@@ -1,0 +1,26 @@
+Rust 1.98.0 on windows-latest	Install validation toolchain	2026-10-24T08:56:22.9259029Z   1.98.0-x86_64-pc-windows-msvc installed - rustc 1.98.0 (88d9e12ae 2026-08-18)
+Rust 1.98.0 on windows-latest	Record toolchain	2026-10-24T08:56:23.9673578Z rustc 1.98.0 (88d9e12ae 2026-08-18)
+Rust 1.98.0 on windows-latest	Record toolchain	2026-10-24T08:56:23.9675700Z host: x86_64-pc-windows-msvc
+Rust 1.98.0 on windows-latest	Test locked dependency graph	﻿2026-10-24T08:56:24.1097946Z ##[group]Run cargo +1.98.0 test --locked
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:56:24.1098349Z ^[[36;1mcargo +1.98.0 test --locked^[[0m
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:56:35.7300974Z     Finished `test` profile [unoptimized + debuginfo] target(s) in 10.69s
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:56:35.9187639Z test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:56:35.9320245Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:57:21.8196642Z test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 45.87s
+Rust 1.98.0 on windows-latest	Test locked dependency graph	2026-10-24T08:57:21.9452041Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+Rust 1.98.0 on windows-latest	Build release	﻿2026-10-24T08:57:22.4540775Z ##[group]Run cargo +1.98.0 build --release --locked
+Rust 1.98.0 on windows-latest	Build release	2026-10-24T08:57:22.4541254Z ^[[36;1mcargo +1.98.0 build --release --locked^[[0m
+Rust 1.98.0 on windows-latest	Build release	2026-10-24T08:57:33.7034597Z     Finished `release` profile [optimized] target(s) in 10.89s
+Rust 1.98.0 on ubuntu-latest	Install validation toolchain	2026-10-24T08:56:13.0374878Z   1.98.0-x86_64-unknown-linux-gnu installed - rustc 1.98.0 (88d9e12ae 2026-08-18)
+Rust 1.98.0 on ubuntu-latest	Record toolchain	2026-10-24T08:56:13.0858596Z rustc 1.98.0 (88d9e12ae 2026-08-18)
+Rust 1.98.0 on ubuntu-latest	Record toolchain	2026-10-24T08:56:13.0859950Z host: x86_64-unknown-linux-gnu
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	﻿2026-10-24T08:56:13.1052739Z ##[group]Run cargo +1.98.0 test --locked
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:13.1053091Z ^[[36;1mcargo +1.98.0 test --locked^[[0m
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:16.6592664Z     Finished `test` profile [unoptimized + debuginfo] target(s) in 3.53s
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:16.7913009Z test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:16.7925529Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:55.3710512Z test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 38.58s
+Rust 1.98.0 on ubuntu-latest	Test locked dependency graph	2026-10-24T08:56:55.4040612Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+Rust 1.98.0 on ubuntu-latest	Build release	﻿2026-10-24T08:56:55.4402998Z ##[group]Run cargo +1.98.0 build --release --locked
+Rust 1.98.0 on ubuntu-latest	Build release	2026-10-24T08:56:55.4403355Z ^[[36;1mcargo +1.98.0 build --release --locked^[[0m
+Rust 1.98.0 on ubuntu-latest	Build release	2026-10-24T08:56:59.4830166Z     Finished `release` profile [optimized] target(s) in 4.02s

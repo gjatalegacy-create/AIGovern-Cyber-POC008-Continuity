@@ -1,10 +1,20 @@
+---
+license: apache-2.0
+language:
+  - en
+tags:
+  - rust
+  - reproducibility
+  - checkpoint-continuity
+pretty_name: AIGovern-Cyber POC008 Evidence-Bound Continuity
+---
 # AIGovern-Cyber POC008: Evidence-Bound Continuity
 
 POC008 tests whether a finite ESS-MAI PD session can continue across separate operating-system processes with exactly the same checkpoint bytes as uninterrupted execution. It combines selected AIGovern-Cyber source with a new, small storage adapter. It is a public operational continuity experiment, not the complete private runtime.
 
 Author and accountable maintainer: **Bledar Gjata, Independent Researcher, Albania**. [ORCID 0009-0003-7854-266X](https://orcid.org/0009-0003-7854-266X).
 
-Distribution: [GitHub source and review](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity) and [Hugging Face dataset mirror](https://huggingface.co/datasets/gjata-legacy/ess-mai-poc-008-continuity). Software release DOI: [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613), reserved for this release; repository publication, DOI activation and remote CI remain pending until their completion is recorded.
+Distribution: [GitHub source and review](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity) and [Hugging Face research-artifact mirror](https://huggingface.co/datasets/gjata-legacy/ess-mai-poc-008-continuity). Software release DOI: [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613). [Research preprint](https://doi.org/10.5281/zenodo.23613785). The HF repository is an artifact distribution, not a training dataset.
 
 ## What is extracted, and what is new?
 
@@ -34,7 +44,7 @@ The [execution record](evidence/RESULT.json) identifies the tested package, comm
 - Oversized-input rejection before append.
 - **Acceptance of a valid older WAL**, recorded as a rollback limitation.
 
-Source tests cover import atomicity, identity and fresh-target checks, canonical ordering, semantic corruption, and retention of budget and detector state. These finite checks do not establish indefinite continuity, semantic truth or general security. Remote Windows/Linux CI and independent reproduction are separate activities, pending until recorded.
+Source tests cover import atomicity, identity and fresh-target checks, canonical ordering, semantic corruption, and retention of budget and detector state. These finite checks do not establish indefinite continuity, semantic truth or general security. [GitHub CI run 40079957984](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity/actions/runs/40079957984) also passed tests and release builds on Windows and Linux; see [the job record](evidence/github-ci.json). Independent human reproduction remains invited, not claimed.
 
 ## Build and reproduce
 

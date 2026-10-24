@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the POC008 release or commit you used. This software DOI is reserved for the release and becomes available when its deposit is published."
+message: "Please cite the POC008 release or commit you used and its software DOI."
 type: software
 title: "AIGovern-Cyber POC008: Evidence-Bound Continuity"
 version: "0.1.0"
+date-released: "2026-10-24"
 doi: "10.5281/zenodo.23613613"
 authors:
   - family-names: "Gjata"

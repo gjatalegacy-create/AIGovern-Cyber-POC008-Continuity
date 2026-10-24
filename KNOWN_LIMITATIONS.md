@@ -28,6 +28,6 @@ The [execution record](evidence/RESULT.json) distinguishes completed checks from
 
 13. **Ticks are supplied inputs.** `TICK` enables reproducibility; it is not authenticated or guaranteed monotonic. Exact retries bind it. No physical timing claim follows.
 
-14. **Platform and independent coverage.** The recorded local run uses Rust/Cargo 1.98.0, Windows GNU. Remote Windows/Linux CI and independent reproduction are separate activities, pending until linked. No separately tested package MSRV, dependency vulnerability audit or unbounded fuzzing result is claimed.
+14. **Platform and independent coverage.** The recorded local run uses Rust/Cargo 1.98.0, Windows GNU. GitHub CI run 40079957984 passed the same tests and release builds on Windows and Linux; independent human reproduction is not claimed. No separately tested package MSRV, dependency vulnerability audit or unbounded fuzzing result is claimed.
 
 15. **No certification.** AI-assisted engineering and maintainer execution are not independent peer review, proof of the full theory, certification, AI Act compliance or a general cybersecurity guarantee.

@@ -47,6 +47,12 @@
       "identifier": "10.5281/zenodo.23597026",
       "relation": "references",
       "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23613785",
+      "relation": "isDescribedBy",
+      "scheme": "doi"
     }
-  ]
+  ],
+  "publication_date": "2026-10-24"
 }

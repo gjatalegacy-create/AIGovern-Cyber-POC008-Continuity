@@ -14,6 +14,6 @@ Bledar Gjata directs the architecture. OpenAI Codex assisted engineering, testin
 
 Existing hashing, checksums, serialization, file locks, checkpointing and write-ahead logging are not claimed as POC008 inventions. Any contribution claim concerns the described composition and its measured behavior.
 
-The POC008 software DOI is [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613), reserved for this release; activation follows publication. Prior identifiers—the [POC003–006 archive](https://doi.org/10.5281/zenodo.22750188), [POC007 software](https://doi.org/10.5281/zenodo.23596907), and [POC007 preprint](https://doi.org/10.5281/zenodo.23597026)—identify their own artifacts.
+The POC008 software DOI is [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613). Prior identifiers—the [POC003–006 archive](https://doi.org/10.5281/zenodo.22750188), [POC007 software](https://doi.org/10.5281/zenodo.23596907), and [POC007 preprint](https://doi.org/10.5281/zenodo.23597026)—identify their own artifacts.
 
 No certification, AI Act compliance, independent reproduction or general security guarantee is claimed.

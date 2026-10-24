@@ -3,7 +3,7 @@
 Bledar Gjata · Independent Researcher, Albania  
 ORCID: [0009-0003-7854-266X](https://orcid.org/0009-0003-7854-266X)
 
-**POC008 manuscript, 24 October 2026. Software DOI reserved for publication: [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613). This reservation does not itself confirm publication. A separate manuscript DOI is not yet assigned.**
+**Research preprint, 24 October 2026. Manuscript: [10.5281/zenodo.23613785](https://doi.org/10.5281/zenodo.23613785). Software artifact: [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613).**
 
 ## Abstract
 
@@ -54,7 +54,7 @@ A second fixture runs 65 synthetic, same-topic turns through separate subprocess
 
 Additional integration cases cover old exact retries after the head advances, changed retries, stale requests, two isolated contexts, caller-modified checkpoints and questions, malformed framing, CRC corruption, recomputed public hashes around an invalid transition, incomplete tails and wrong-parent records. A child-process lock probe checks refusal of a competing opener and release after the lock holder is killed. That probe does not interrupt a commit. Oversized input and inherited malformed-checkpoint tests exercise bounded rejection. The 4096-turn ceiling is explicit in validation code; a direct 4096/4097 boundary test was not performed.
 
-Validation used Rust 1.98.0 on `x86_64-pc-windows-gnu`, with warnings denied. The reproduction commands are `cargo test --locked` and `cargo build --release --locked`; the recorded release build also used `--offline` with dependencies already cached. CI is configured for Windows and Linux using Rust 1.98.0, but no Linux result is reported here. A tested minimum supported Rust version has not been established.
+Validation used Rust 1.98.0 on `x86_64-pc-windows-gnu`, with warnings denied. The reproduction commands are `cargo test --locked` and `cargo build --release --locked`; the recorded release build also used `--offline` with dependencies already cached. GitHub CI run 40079957984 also passed all 35 tests and release builds on Windows and Linux using Rust 1.98.0. The job record is included in evidence/github-ci.json; these are maintainer-controlled automated runs, not independent human review. A tested minimum supported Rust version has not been established.
 
 ## 5. Measured results
 
@@ -82,7 +82,7 @@ Subprocess relaunch and prepared malformed files do not simulate every interrupt
 
 Bledar Gjata directs the architecture, research question and authority boundaries as an independent researcher. OpenAI Codex assisted source inspection, extraction planning, adapter implementation, tests and documentation, including this manuscript. An exact model-build identifier is not recorded here. The author reports reviewing generated work through shell-based checks. That statement is distinct from a claim that every command was manually typed or every line independently audited. AI agreement is not independent human review.
 
-The Apache-2.0 package targets release `poc008-public-v0.1.0` in [AIGovern-Cyber-POC008-Continuity](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity). Its software DOI is reserved as [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613); public archival release is still pending at this manuscript revision. Reviewers are invited to reproduce a differing checkpoint prefix, defeat the request/head checks, find a malformed tail wrongly repaired, or identify a misleading authority claim. Reports should include the exact version, platform, input bytes, ticks, expected behavior and smallest reproducer. Negative findings and the accepted rollback limitation belong in the public record.
+The Apache-2.0 package targets release `poc008-public-v0.1.0` in [AIGovern-Cyber-POC008-Continuity](https://github.com/gjatalegacy-create/AIGovern-Cyber-POC008-Continuity). Its software artifact is identified by [10.5281/zenodo.23613613](https://doi.org/10.5281/zenodo.23613613). Reviewers are invited to reproduce a differing checkpoint prefix, defeat the request/head checks, find a malformed tail wrongly repaired, or identify a misleading authority claim. Reports should include the exact version, platform, input bytes, ticks, expected behavior and smallest reproducer. Negative findings and the accepted rollback limitation belong in the public record.
 
 ## References
 
